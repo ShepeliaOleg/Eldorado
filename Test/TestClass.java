@@ -38,16 +38,16 @@ public class TestClass {
     @Test
     public void testOne () throws InterruptedException, IOException {
 
-        Exception ex = new Exception();
+        /*Exception ex = new Exception();
         System.out.println(ex.getStackTrace()[0].getMethodName());
-        String methodName = ex.getStackTrace()[0].getMethodName();
+        String methodName = ex.getStackTrace()[0].getMethodName();*/
 
         autho.authorization(driver, "sdddddf@gmai.com", "df333333");
         Thread.sleep(5000);
        boolean loginException = driver.findElement(By.xpath("//*[contains(@class, 'invalid errorBox')]")).isDisplayed();
 
         assertTrue(loginException);
-        autho.doScreenchot(driver, "c:\\temp\\"+methodName+"_screenshot.png");
+        autho.doScreenchot(driver);
 
 
     }

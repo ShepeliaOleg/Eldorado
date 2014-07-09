@@ -62,7 +62,12 @@ public class AuthorizationRegister {
         region.click();
     }
 
-    public void doScreenchot (WebDriver driver, String path) throws IOException {
+    public void doScreenchot (WebDriver driver) throws IOException {
+        Exception ex = new Exception();
+
+        String methodName = ex.getStackTrace()[0].getMethodName();
+
+        String path = "c:\\temp\\"+methodName+"_screenshot.png";
 
         File sreenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         org.apache.commons.io.FileUtils.copyFile(sreenshot, new File(path));

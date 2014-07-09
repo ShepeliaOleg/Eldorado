@@ -61,7 +61,7 @@ public class Authorization {
 		Thread.sleep(3000);
         boolean personalCabinet = driver.getPageSource().contains(personalCabinetEN);
         assertTrue(personalCabinet);
-        autho.doScreenchot(driver, "C:\\");
+
 
 	}
     @Test //Корректный номер бонусной карты + корректный PinCorrect-код

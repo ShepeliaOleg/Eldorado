@@ -16,26 +16,26 @@ public class Authorization {
 
 	AuthorizationRegister autho = new AuthorizationRegister();
 	private WebDriver driver;
-    private String url = "http://10.96.32.98:9001/eldoradostorefront/A100/ru";
+    private String url = "http://10.96.32.98:9001/eldoradostorefront/A100/en";
     private String personalCabinetEN = "Personal cabinet";
     private String personalCabinetRU = "Личный кабинет";
 
     // login with Email
     private String emailCorrect = "oleg25@gmail.com";
     private String passwordForEmailCorrect = "111111";
-    private String emailIncorrect = "";
-    private String passwordIncorrect = "";
+    private String emailIncorrect = "oleg2345435@gmail.com";
+    private String passwordIncorrect = "sdfsdfssdfs";
 
     // login with Log
-    private String loginCorrect = "";
-    private String passwordForLoginCorrect = "";
-    private String loginIncorrect = "";
+    private String loginCorrect = "sdfsd";
+    private String passwordForLoginCorrect = "sdfsfe34r";
+    private String loginIncorrect = "dfgdfg";
 
     // login with bonus card + Pin-code
-    private String bonusCardCorrect = "";
-    private String PinCorrect = "";
-    private String bonusCardIncorrect = "";
-    private String PinIncorrect = "";
+    private String bonusCardCorrect = "9643781000004860";
+    private String PinCorrect = "2222";
+    private String bonusCardIncorrect = "9643781000004890";
+    private String PinIncorrect = "1111";
 
 
     @Before
@@ -50,7 +50,8 @@ public class Authorization {
 
 	@After
 	public void tearDown() throws Exception {
-       autho.logOut(driver, personalCabinetEN);
+      // autho.logOut(driver, personalCabinetEN);
+        driver.quit();
 	}
 
 	@Test //Корректный Email + корректный пароль

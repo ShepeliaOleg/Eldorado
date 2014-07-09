@@ -66,21 +66,19 @@
       <file leaf-file-name="AuthorizationRegister.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Login_Logout/AuthorizationRegister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="584" max-vertical-offset="1173">
-              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="601" max-vertical-offset="1207">
+              <caret line="67" column="76" selection-start-line="67" selection-start-column="76" selection-end-line="67" selection-end-column="76" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Authorization.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Authorization.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test/Authorization.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70598006" vertical-offset="442" max-vertical-offset="1802">
-              <caret line="62" column="41" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1819">
+              <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
               <folding>
-                <element signature="e#1416#1417#0" expanded="true" />
-                <element signature="e#1467#1468#0" expanded="true" />
                 <element signature="method#loginWithCorrectBCardPin#0;class#Authorization#0" expanded="false" />
                 <element signature="method#loginWithCorrectLoginPassword#0;class#Authorization#0" expanded="false" />
                 <element signature="method#loginWithCorrectLogAndIncorrectPassword#0;class#Authorization#0" expanded="false" />
@@ -90,6 +88,18 @@
                 <element signature="method#loginWithIncorrectBCardAndCorrectPassword#0;class#Authorization#0" expanded="false" />
                 <element signature="method#loginWithIncorrectEmailAndCorrectPassword#0;class#Authorization#0" expanded="false" />
                 <element signature="method#loginWithIncorrectLogPassword#0;class#Authorization#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestClass.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Test/TestClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.49169436" vertical-offset="401" max-vertical-offset="1020">
+              <caret line="41" column="66" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,8 +116,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/Test/eRegion.java" />
-        <option value="$PROJECT_DIR$/src/Login_Logout/AuthorizationRegister.java" />
         <option value="$PROJECT_DIR$/Test/Authorization.java" />
+        <option value="$PROJECT_DIR$/src/Login_Logout/AuthorizationRegister.java" />
+        <option value="$PROJECT_DIR$/Test/TestClass.java" />
       </list>
     </option>
   </component>
@@ -214,7 +225,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.Authorization">
+  <component name="RunManager" selected="JUnit.TestClass">
     <configuration default="false" name="Authorization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Eldorado" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -234,6 +245,34 @@
       <envs />
       <patterns />
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Eldorado" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestClass" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -366,12 +405,14 @@
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JUnit.Authorization" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestClass" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Authorization" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestClass" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Authorization" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -401,7 +442,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.399361" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920355" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -441,7 +482,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Test/Authorization.java</url>
-          <line>68</line>
+          <line>69</line>
           <properties />
         </line-breakpoint>
       </breakpoints>
@@ -466,8 +507,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="395" max-vertical-offset="1802">
           <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
           <folding>
-            <element signature="e#1416#1417#0" expanded="true" />
-            <element signature="e#1467#1468#0" expanded="true" />
             <element signature="method#loginWithCorrectBCardPin#0;class#Authorization#0" expanded="false" />
             <element signature="method#loginWithCorrectLoginPassword#0;class#Authorization#0" expanded="false" />
             <element signature="method#loginWithCorrectLogAndIncorrectPassword#0;class#Authorization#0" expanded="false" />
@@ -494,8 +533,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1416#1417#0" expanded="true" />
-            <element signature="e#1467#1468#0" expanded="true" />
             <element signature="method#loginWithCorrectBCardPin#0;class#Authorization#0" expanded="false" />
             <element signature="method#loginWithCorrectLoginPassword#0;class#Authorization#0" expanded="false" />
             <element signature="method#loginWithCorrectLogAndIncorrectPassword#0;class#Authorization#0" expanded="false" />
@@ -522,8 +559,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1003">
           <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
           <folding>
-            <element signature="e#1416#1417#0" expanded="true" />
-            <element signature="e#1467#1468#0" expanded="true" />
             <element signature="method#loginWithCorrectBCardPin#0;class#Authorization#0" expanded="false" />
             <element signature="method#loginWithCorrectLoginPassword#0;class#Authorization#0" expanded="false" />
             <element signature="method#loginWithCorrectLogAndIncorrectPassword#0;class#Authorization#0" expanded="false" />
@@ -550,8 +585,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="197" max-vertical-offset="697">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#1416#1417#0" expanded="true" />
-            <element signature="e#1467#1468#0" expanded="true" />
             <element signature="method#loginWithCorrectBCardPin#0;class#Authorization#0" expanded="false" />
             <element signature="method#loginWithCorrectLoginPassword#0;class#Authorization#0" expanded="false" />
             <element signature="method#loginWithCorrectLogAndIncorrectPassword#0;class#Authorization#0" expanded="false" />
@@ -576,13 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
           <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/ERegion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24216524" vertical-offset="0" max-vertical-offset="351">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -614,21 +640,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Login_Logout/AuthorizationRegister.java">
+    <entry file="file://$PROJECT_DIR$/Test/ERegion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="584" max-vertical-offset="1173">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.14119601" vertical-offset="0" max-vertical-offset="602">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33222592" vertical-offset="29771" max-vertical-offset="52955">
+          <caret line="1849" column="20" selection-start-line="1849" selection-start-column="20" selection-end-line="1849" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/Authorization.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70598006" vertical-offset="442" max-vertical-offset="1802">
-          <caret line="62" column="41" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1819">
+          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
           <folding>
-            <element signature="e#1416#1417#0" expanded="true" />
-            <element signature="e#1467#1468#0" expanded="true" />
             <element signature="method#loginWithCorrectBCardPin#0;class#Authorization#0" expanded="false" />
             <element signature="method#loginWithCorrectLoginPassword#0;class#Authorization#0" expanded="false" />
             <element signature="method#loginWithCorrectLogAndIncorrectPassword#0;class#Authorization#0" expanded="false" />
@@ -638,6 +670,24 @@
             <element signature="method#loginWithIncorrectBCardAndCorrectPassword#0;class#Authorization#0" expanded="false" />
             <element signature="method#loginWithIncorrectEmailAndCorrectPassword#0;class#Authorization#0" expanded="false" />
             <element signature="method#loginWithIncorrectLogPassword#0;class#Authorization#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login_Logout/AuthorizationRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="601" max-vertical-offset="1207">
+          <caret line="67" column="76" selection-start-line="67" selection-start-column="76" selection-end-line="67" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/TestClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49169436" vertical-offset="401" max-vertical-offset="1020">
+          <caret line="41" column="66" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

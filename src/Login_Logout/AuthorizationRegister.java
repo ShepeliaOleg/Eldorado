@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.lang.String;
 
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 
@@ -65,5 +66,7 @@ public class AuthorizationRegister {
 
         File sreenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         org.apache.commons.io.FileUtils.copyFile(sreenshot, new File(path));
+
+
     }
 }

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/../ComplexProperty/lib/selenium-server-standalone-2.35.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../ComplexProperty/lib/selenium-java-2.35.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../ComplexProperty/lib/selenium-firefox-driver-2.25.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../ComplexProperty/lib/junit-4.10.jar!/" />
+    <src_description expected_position="3">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="3" />
+      <src_folder value="file://$MODULE_DIR$/Test" expected_position="4" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Test" isTestSource="false" />
+    </content>
+    <orderEntry type="module-library">
+      <library name="selenium-server-standalone-2.35.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../ComplexProperty/lib/selenium-server-standalone-2.35.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="selenium-java-2.35.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../ComplexProperty/lib/selenium-java-2.35.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="selenium-firefox-driver-2.25.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../ComplexProperty/lib/selenium-firefox-driver-2.25.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module-library">
+      <library name="junit-4.10.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../ComplexProperty/lib/junit-4.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
+

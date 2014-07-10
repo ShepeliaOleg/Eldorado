@@ -20,7 +20,8 @@ public class MakeScreenshot {
 
         String methodName = ex.getStackTrace()[0].getMethodName();
 
-        String path = "c:\\temp\\"+methodName+"_screenshot.png";
+        //String path = "c:\\temp\\"+methodName+"_screenshot.png";
+        String path = "c:\\temp\\screenshot.png";
 
         File sreenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         org.apache.commons.io.FileUtils.copyFile(sreenshot, new File(path));

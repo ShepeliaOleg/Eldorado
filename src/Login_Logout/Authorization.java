@@ -48,9 +48,9 @@ public class Authorization {
             screenshot.doScreenchot(driver);
             Assert.assertTrue(loginException);
         } if (loginException == true){
-
             Assert.assertTrue(loginException);
         } else {
+            screenshot.doScreenchot(driver);
             Assert.assertTrue(false);
         }
     }
@@ -59,11 +59,14 @@ public class Authorization {
 
         boolean personalCabinet = driver.getPageSource().contains(personalCabinetLang);
         if (personalCabinet == false){
+            System.out.println("1");
             screenshot.doScreenchot(driver);
             Assert.assertTrue(personalCabinet);
         } if (personalCabinet == true) {
+            System.out.println("2");
             Assert.assertTrue(personalCabinet);
         } else {
+            System.out.println("3");
             screenshot.doScreenchot(driver);
             Assert.assertTrue(personalCabinet);
         }

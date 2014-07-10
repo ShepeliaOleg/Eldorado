@@ -44,9 +44,9 @@ public class TestClass {
         System.out.println(ex.getStackTrace()[0].getMethodName());
         String methodName = ex.getStackTrace()[0].getMethodName();*/
 
-        autho.authorization(driver, "sdddddf@gmai.com", "df333333");
+        autho.authorization(driver, "oleg89@gmail.com", "111111");
         Thread.sleep(5000);
-        autho.checkIncorrectResult(driver);
+        autho.checkCorrectResult(driver, personalCabinetEN);
 
 
     }

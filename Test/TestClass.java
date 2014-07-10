@@ -1,4 +1,5 @@
-import Login_Logout.AuthorizationRegister;
+import Login_Logout.Authorization;
+import Login_Logout.MakeScreenshot;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -14,7 +15,8 @@ import static org.junit.Assert.assertTrue;
  * Created by New on 09.07.2014.
  */
 public class TestClass {
-    AuthorizationRegister autho = new AuthorizationRegister();
+    Authorization autho = new Login_Logout.Authorization();
+    MakeScreenshot makeScreenshot = new MakeScreenshot();
     WebDriver driver;
     String url = "http://10.96.32.98:9001/eldoradostorefront/A100/en/";
     private String personalCabinetEN = "Personal cabinet";
@@ -44,10 +46,7 @@ public class TestClass {
 
         autho.authorization(driver, "sdddddf@gmai.com", "df333333");
         Thread.sleep(5000);
-       boolean loginException = driver.findElement(By.xpath("//*[contains(@class, 'invalid errorBox')]")).isDisplayed();
-
-        assertTrue(loginException);
-        autho.doScreenchot(driver);
+        autho.checkIncorrectResult(driver);
 
 
     }

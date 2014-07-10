@@ -1,20 +1,17 @@
 import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
 
-import com.sun.javafx.scene.EnteredExitedHandler;
 import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import Login_Logout.AuthorizationRegister;
-
 import java.io.IOException;
 
 
-public class Authorization {
+public class AuthorizationTest {
 
-	AuthorizationRegister autho = new AuthorizationRegister();
+	Login_Logout.Authorization autho = new Login_Logout.Authorization();
 	private WebDriver driver;
     private String url = "http://10.96.32.98:9001/eldoradostorefront/A100/en";
     private String personalCabinetEN = "Personal cabinet";

@@ -1,21 +1,16 @@
-import static org.junit.Assert.*;
-
+import Login_Logout.*;
+import Login_Logout.Authorization;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-
-import Login_Logout.AuthorizationRegister;
-import Login_Logout.ShowQuestionnaire;
 
 
 public class TestShowQuestionnaire {
 
 	ShowQuestionnaire showQuestionnaire = new ShowQuestionnaire();
-	AuthorizationRegister authorizationRegister = new AuthorizationRegister();
+	Authorization authorizationRegister = new Login_Logout.Authorization();
 	
 	private WebDriver driver;
 	

@@ -16,6 +16,8 @@ public class Authorization {
 
 	private WebDriver driver;
     MakeScreenshot screenshot = new MakeScreenshot();
+    private String personalCabinetEN = "Personal cabinet";
+    private String personalCabinetRU = "Личный кабинет";
 
 	
 	/**
@@ -38,37 +40,43 @@ public class Authorization {
         WebElement login = driver.findElement(By.xpath("//*[contains(@class, 'authSubmit')]"));
         Thread.sleep(2000);
         login.click();
+        Thread.sleep(3000);
     }
 
-    public void checkIncorrectResult (WebDriver driver) throws IOException {
+    public void checkIncorrectResult (WebDriver driver, String fileName) throws IOException {
 
         boolean loginException = driver.findElement(By.xpath("//*[contains(@class, 'invalid errorBox')]")).isDisplayed();
 
         if (loginException == false){
-            screenshot.doScreenchot(driver);
+            screenshot.doScreenchot(driver, fileName);
             Assert.assertTrue(loginException);
         } if (loginException == true){
             Assert.assertTrue(loginException);
         } else {
-            screenshot.doScreenchot(driver);
+            screenshot.doScreenchot(driver, fileName);
             Assert.assertTrue(false);
         }
     }
 
-    public void checkCorrectResult (WebDriver driver, String personalCabinetLang) throws IOException {
+    public void checkCorrectResult (WebDriver driver, String fileName) throws IOException {
 
-        boolean personalCabinet = driver.getPageSource().contains(personalCabinetLang);
-        if (personalCabinet == false){
-            System.out.println("1");
+        boolean personalCabinetRuLang = driver.getPageSource().contains(personalCabinetRU);
+        boolean personalCabinetEnLang = driver.getPageSource().contains(personalCabinetEN);
+        /*if (personalCabinet == false){
             screenshot.doScreenchot(driver);
             Assert.assertTrue(personalCabinet);
         } if (personalCabinet == true) {
-            System.out.println("2");
             Assert.assertTrue(personalCabinet);
         } else {
-            System.out.println("3");
             screenshot.doScreenchot(driver);
             Assert.assertTrue(personalCabinet);
+        }*/
+
+        if (personalCabinetEnLang == true || personalCabinetRuLang == true){
+            Assert.assertTrue(true);
+        } else {
+            screenshot.doScreenchot(driver, fileName);
+            Assert.assertTrue(false);
         }
     }
 

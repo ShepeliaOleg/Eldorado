@@ -15,17 +15,28 @@ public class MakeScreenshot {
     private WebDriver driver;
     Exception ex = new Exception();
 
-    public void doScreenchot (WebDriver driver) throws IOException {
+
+    public void doScreenchot (WebDriver driver, String fileName) throws IOException {
 
 
         String methodName = ex.getStackTrace()[0].getMethodName();
 
-        //String path = "c:\\temp\\"+methodName+"_screenshot.png";
-        String path = "c:\\temp\\screenshot.png";
+        String path = "c:\\temp\\"+fileName+"_screenshot.png";
+        //String path = "c:\\temp\\screenshot.png";
 
         File sreenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         org.apache.commons.io.FileUtils.copyFile(sreenshot, new File(path));
 
 
+    }
+
+    public void returnMethodName (){
+        boolean a = false;
+        boolean b = true;
+        if (true == a || true == a){
+            System.out.println("1");
+        } else {
+            System.out.println("2");
+        }
     }
 }

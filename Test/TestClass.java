@@ -18,8 +18,11 @@ public class TestClass {
     Authorization autho = new Login_Logout.Authorization();
     MakeScreenshot makeScreenshot = new MakeScreenshot();
     WebDriver driver;
-    String url = "http://10.96.32.98:9001/eldoradostorefront/A100/en/";
+    String url = "http://10.96.32.98:9001/eldoradostorefront/A100/ru/";
     private String personalCabinetEN = "Personal cabinet";
+
+
+
 
     @Before
     public void setUpBeforeClass() throws Exception{
@@ -40,13 +43,13 @@ public class TestClass {
     @Test
     public void testOne () throws InterruptedException, IOException {
 
-        /*Exception ex = new Exception();
-        System.out.println(ex.getStackTrace()[0].getMethodName());
-        String methodName = ex.getStackTrace()[0].getMethodName();*/
-
+        Exception ex = new Exception();
+        String methodName = ex.getStackTrace()[0].getMethodName().toString();
+        System.out.println(methodName);
         autho.authorization(driver, "oleg89@gmail.com", "111111");
         Thread.sleep(5000);
-        autho.checkCorrectResult(driver, personalCabinetEN);
+        autho.checkCorrectResult(driver, methodName);
+
 
 
     }

@@ -14,8 +14,6 @@ public class AuthorizationTest {
 	Login_Logout.Authorization autho = new Login_Logout.Authorization();
 	private WebDriver driver;
     private String url = "http://10.96.32.98:9001/eldoradostorefront/A100/en";
-    private String personalCabinetEN = "Personal cabinet";
-    private String personalCabinetRU = "Личный кабинет";
 
     // login with Email
     private String emailCorrect = "oleg25@gmail.com";
@@ -48,124 +46,129 @@ public class AuthorizationTest {
 	@After
 	public void tearDown() throws Exception {
       // autho.logOut(driver, personalCabinetEN);
-        driver.quit();
+        
 	}
 
 	@Test //Корректный Email + корректный пароль
 	public void loginWithCorrectEmailPassword() throws InterruptedException, IOException {
 
-        autho.authorization(driver, emailCorrect, passwordForEmailCorrect);
-		Thread.sleep(3000);
-        boolean personalCabinet = driver.getPageSource().contains(personalCabinetEN);
-        assertTrue(personalCabinet);
+        Exception ex = new Exception();
+        String methodName = ex.getStackTrace()[0].getMethodName().toString();
 
+        autho.authorization(driver, emailCorrect, passwordForEmailCorrect);
+        autho.checkCorrectResult(driver, methodName);
 
 	}
     @Test //Корректный номер бонусной карты + корректный PinCorrect-код
-    public void loginWithCorrectBCardPin () throws InterruptedException{
+    public void loginWithCorrectBCardPin () throws InterruptedException, IOException {
+
+        Exception ex = new Exception();
+        String methodName = ex.getStackTrace()[0].getMethodName().toString();
 
         autho.authorization(driver, bonusCardCorrect, PinCorrect);
-        Thread.sleep(3000);
-        boolean personalCabinet = driver.getPageSource().contains(personalCabinetEN);
-        assertTrue(personalCabinet);
+        autho.checkCorrectResult(driver, methodName);
 
     }
     @Test //Корректный логин + корректный пароль
-    public void loginWithCorrectLoginPassword () throws InterruptedException {
+    public void loginWithCorrectLoginPassword () throws InterruptedException, IOException {
+        Exception ex = new Exception();
+        String methodName = ex.getStackTrace()[0].getMethodName().toString();
 
         autho.authorization(driver, loginCorrect, passwordForLoginCorrect);
-        Thread.sleep(3000);
-        boolean personalCabinet = driver.getPageSource().contains(personalCabinetEN);
-        assertTrue(personalCabinet);
+        autho.checkCorrectResult(driver, methodName);
+
 
     }
 
     @Test //Корректный логин + некорректный пароль
-    public void loginWithCorrectLogAndIncorrectPassword ()throws InterruptedException{
+    public void loginWithCorrectLogAndIncorrectPassword () throws InterruptedException, IOException {
+
+        Exception ex = new Exception();
+        String methodName = ex.getStackTrace()[0].getMethodName().toString();
 
         autho.authorization(driver, loginCorrect, passwordIncorrect);
-        Thread.sleep(3000);
-        boolean loginException = driver.findElement(By.xpath("//*[contains(@class, 'invalid errorBox')]")).isDisplayed();
-        //assertTrue(driver.findElement(By.xpath("//*[contains(@class, 'invalid errorBox')]")).isDisplayed());
-        assertTrue(loginException);
+        autho.checkIncorrectResult(driver, methodName);
     }
 
     @Test //Корректный номер бонусной карты + некорректный PinCorrect-код
-    public void loginWithCorrectBCardAndIncorrectPin () throws InterruptedException {
+    public void loginWithCorrectBCardAndIncorrectPin () throws InterruptedException, IOException {
+
+        Exception ex = new Exception();
+        String methodName = ex.getStackTrace()[0].getMethodName().toString();
 
         autho.authorization(driver, bonusCardCorrect, PinIncorrect);
-        Thread.sleep(3000);
-        boolean loginException = driver.findElement(By.xpath("//*[contains(@class, 'invalid errorBox')]")).isDisplayed();
-        assertTrue(loginException);
+        autho.checkIncorrectResult(driver, methodName);
     }
 
     @Test //Корректный Email + некорректный пароль
-    public void loginWithCorrectEmailAndIncorrectPassword () throws InterruptedException {
+    public void loginWithCorrectEmailAndIncorrectPassword () throws InterruptedException, IOException {
+
+        Exception ex = new Exception();
+        String methodName = ex.getStackTrace()[0].getMethodName().toString();
 
         autho.authorization(driver, emailCorrect, passwordIncorrect);
-        Thread.sleep(3000);
-        boolean loginException = driver.findElement(By.xpath("//*[contains(@class, 'invalid errorBox')]")).isDisplayed();
-        assertTrue(loginException);
+        autho.checkIncorrectResult(driver, methodName);
 
     }
 
     @Test //Некорректный логин + корректный пароль
-    public void loginWithIncorrectLogAndCorrectPassword () throws InterruptedException {
+    public void loginWithIncorrectLogAndCorrectPassword () throws InterruptedException, IOException {
+
+        Exception ex = new Exception();
+        String methodName = ex.getStackTrace()[0].getMethodName().toString();
 
         autho.authorization(driver, loginIncorrect, passwordForLoginCorrect);
-        Thread.sleep(3000);
-        boolean loginException = driver.findElement(By.xpath("//*[contains(@class, 'invalid errorBox')]")).isDisplayed();
-        assertTrue(loginException);
+        autho.checkIncorrectResult(driver, methodName);
 
     }
 
     @Test //Некорректный номер бонусной карты + корректный PinCorrect-код
-    public void loginWithIncorrectBCardAndCorrectPassword () throws InterruptedException {
+    public void loginWithIncorrectBCardAndCorrectPassword () throws InterruptedException, IOException {
+
+        Exception ex = new Exception();
+        String methodName = ex.getStackTrace()[0].getMethodName().toString();
 
         autho.authorization(driver, bonusCardIncorrect, PinCorrect);
-        Thread.sleep(3000);
-        boolean loginException = driver.findElement(By.xpath("//*[contains(@class, 'invalid errorBox')]")).isDisplayed();
-        assertTrue(loginException);
-
+        autho.checkIncorrectResult(driver, methodName);
     }
 
     @Test //Некорректный Email + корректный пароль
-    public void loginWithIncorrectEmailAndCorrectPassword () throws InterruptedException {
+    public void loginWithIncorrectEmailAndCorrectPassword () throws InterruptedException, IOException {
+
+        Exception ex = new Exception();
+        String methodName = ex.getStackTrace()[0].getMethodName().toString();
 
         autho.authorization(driver, emailIncorrect, passwordForEmailCorrect);
-        Thread.sleep(3000);
-        boolean loginException = driver.findElement(By.xpath("//*[contains(@class, 'invalid errorBox')]")).isDisplayed();
-        assertTrue(loginException);
-
+        autho.checkIncorrectResult(driver, methodName);
     }
 
     @Test //Некорректный логин + некорректный пароль
-    public void loginWithIncorrectLogPassword () throws InterruptedException {
+    public void loginWithIncorrectLogPassword () throws InterruptedException, IOException {
+
+        Exception ex = new Exception();
+        String methodName = ex.getStackTrace()[0].getMethodName().toString();
 
         autho.authorization(driver, loginIncorrect, passwordIncorrect);
-        Thread.sleep(3000);
-        boolean loginException = driver.findElement(By.xpath("//*[contains(@class, 'invalid errorBox')]")).isDisplayed();
-        assertTrue(loginException);
-
+        autho.checkIncorrectResult(driver, methodName);
     }
 
     @Test //Некорректный номер бонусной карты + некорректный PinCorrect-код
-    public void loginWithIncorrectBCardPin () throws InterruptedException {
+    public void loginWithIncorrectBCardPin () throws InterruptedException, IOException {
+
+        Exception ex = new Exception();
+        String methodName = ex.getStackTrace()[0].getMethodName().toString();
 
         autho.authorization(driver, bonusCardIncorrect, PinIncorrect);
-        Thread.sleep(3000);
-        boolean loginException = driver.findElement(By.xpath("//*[contains(@class, 'invalid errorBox')]")).isDisplayed();
-        assertTrue(loginException);
-
+        autho.checkIncorrectResult(driver, methodName);
     }
 
     @Test //Некорректный Email + некорректный пароль
-    public void loginWithIncorrectEmailPassword () throws InterruptedException {
+    public void loginWithIncorrectEmailPassword () throws InterruptedException, IOException {
+
+        Exception ex = new Exception();
+        String methodName = ex.getStackTrace()[0].getMethodName().toString();
 
         autho.authorization(driver, emailIncorrect, passwordIncorrect);
-        Thread.sleep(3000);
-        boolean loginException = driver.findElement(By.xpath("//*[contains(@class, 'invalid errorBox')]")).isDisplayed();
-        assertTrue(loginException);
-
+        autho.checkIncorrectResult(driver, methodName);
     }
 }
